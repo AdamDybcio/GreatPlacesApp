@@ -30,10 +30,13 @@
 .pub-cache/
 .pub/
 
+# Important!!!
 # If you want this application to work properly, i.e. display Google Maps, you need to create a file called '.env' in the root directory.
 # In it you need to put the 'GOOGLE_API_KEY' key, which you can get after creating an account on Google Cloud Platform,
 # creating a project in it and starting Google Maps API services. The '.env' file should therefore look like this:
 # GOOGLE_API_KEY = [YOUR_GOOGLE_API_KEY]
+# (For IOS users) If you still have problems with Google Maps, then go to AppDelegate.swift file and change "[FlutterConfigPlugin envFor:@"GOOGLE_API_KEY"]"
+#to your GOOGLE_API_KEY
 .env
 
 /build/
